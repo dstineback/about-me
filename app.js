@@ -1,4 +1,4 @@
-
+/**
 var userName = prompt('Time to take a quiz about ME! First off what is your name?');
 alert('Nice to meet you ' + userName + ' time to start the quiz.');
 console.log('get user name');
@@ -68,4 +68,27 @@ if ((userAnswer.toLowerCase() === 'yes') || (userAnswer.toLowerCase() === 'y')) 
 } else {
   console.log('Did not understand your answer for soccer');
   alert('Did not understand your answer. Make sure to answer yes or no');
+}
+**/
+
+
+
+var sonAge = 3;
+
+
+for(var i = 0;( i < 4 || userGuess === sonAge); i++) {
+var userGuess = prompt('What is the age of my son?');
+    console.log('loop Q1');
+    if (userGuess > sonAge) {
+    console.log('Guess too high');
+    alert('Nope, too high');
+  } else if (userGuess < sonAge) {
+    console.log('Guess too low');
+    alert('Nope, too low');
+  } else if (isNan(userGuess)) {
+    alert('not a number');
+  }else {
+    console.log('Guess is correct');
+    alert('You are correct!');
+  }
 }
