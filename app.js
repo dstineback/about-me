@@ -1,5 +1,5 @@
 var rightAnswers = [];
-
+/**
 var userName = prompt('Time to take a quiz about ME! First off what is your name?');
 alert('Nice to meet you ' + userName + ' time to start the quiz.');
 console.log('get user name');
@@ -76,24 +76,26 @@ if ((userAnswer.toLowerCase() === 'yes') || (userAnswer.toLowerCase() === 'y')) 
   console.log('Did not understand your answer for soccer');
   alert('Did not understand your answer. Make sure to answer yes or no');
 }
+ **/
 
-for(var i = 0;( i < 4 && userGuess === sonAge); i++) {
-  var sonAge = 3;
-  var userGuess = prompt('What is the age of my son?');
+var userGuess;
+for(var i = 0;( i < 4 || userGuess === 3); i++) {
+  userGuess = prompt('What is the age of my son?');
   console.log('loop Q1');
-  if (userGuess > sonAge) {
+  if (userGuess > 3) {
     console.log('Guess too high');
     alert('Nope, too high');
-  } else if (userGuess < sonAge) {
+  } else if (userGuess < 3) {
     console.log('Guess too low');
     alert('Nope, too low');
   } else if (isNaN(userGuess)) {
     alert('not a number');
+    console.log('not a number');
   } else {
     console.log('Guess is correct');
     alert('You are correct!');
     rightAnswers.push(true);
   }
-}
+};
 
 alert('Good job you got ' + rightAnswers.length + ' out of 7 questions right!');
