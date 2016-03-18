@@ -1,12 +1,14 @@
 body {
-  background-color: green;}
+  background-color: #BBE1ED;}
 
 header{
-  background-color: blue;}
+  color: blue;}
 
 p {
-  background-color: red;}
+  color: #12143D;}
 
-ul, ol, {
-  background: orange;
-}
+ul {
+  color: #0B4D23;}
+
+ol {
+  color: #0B4D23;}
