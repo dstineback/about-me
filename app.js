@@ -105,7 +105,7 @@ for(var i = 0;( i < 4 && userGuess !== 3); i++) {
     rightAnswers.push(true); //track correct answers//
   }
 };
-
+//
 //this is the message telling user how many questions were correct
 alert('Good job you got ' + rightAnswers.length + ' out of 7 questions right!');
 console.log('amount of correct answers: ' + rightAnswers.length);
