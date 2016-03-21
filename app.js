@@ -93,12 +93,12 @@ function ask4(){
     //alert('Absolutely not, kids are enough!');
     a4.textContent = 'Absolutely not, kids are enough!';
     ansArray.push(prompt4);
-    rightAnswers.push(true); //track correct answer//
   } else if ((pets.toLowerCase() === ('no')) || (pets.toLowerCase() === ('n'))) {
     console.log('No to pets');
     //alert('You are right. I do not have time for pets');
     a4.textContent = 'You are right. I do not have time for pets';
     ansArray.push(prompt4);
+    rightAnswers.push(true); //track correct answer//
   } else {
     console.log('Did not understand your answer for pets');
     alert('Did not understand your answer.Make sure to answer yes or no');
