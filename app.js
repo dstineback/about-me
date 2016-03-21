@@ -181,3 +181,7 @@ ask7();
 //this is the message telling user how many questions were correct
 alert('Good job you got ' + rightAnswers.length + ' out of 7 questions right!');
 console.log('amount of correct answers: ' + rightAnswers.length);
+
+console.table(questionsArray);
+console.table(ansArray);
+console.log(rightAnswers.length);
