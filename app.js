@@ -32,11 +32,13 @@ function ask1() {
     console.log('Yes to born');
     //alert('You are correct!');
     a1.textContent = 'You are correct!';
+    ansArray.push(prompt1);
     rightAnswers.push(true); //track correct answer//
   } else if ((whereBorn.toLowerCase() === ('no')) || (whereBorn.toLowerCase() === ('n'))) {
     console.log('No to born');
     //alert('Believe it or not I have never lived outside of Washington');
     a1.textContent = 'Believe it or not I have never lived outside of Washington';
+    ansArray.push(prompt1);
   } else {
     console.log('Did not understand your answer for born');
     alert('Did not understand your answer.Make sure to answer yes or no');
@@ -50,11 +52,13 @@ function ask2() {
     console.log('Yes to being married');
     //alert('I am married to my beautiful wife Ashley.');
     a2.textContent = 'I am married to my beautiful wife Ashley.';
+    ansArray.push(prompt2);
     rightAnswers.push(true); //track correct answer//
   } else if ((married.toLowerCase() === ('no')) || (married.toLowerCase() === ('n'))) {
     console.log('no about being married');
     //alert('Wrong, I have been married since 2009');
     a2.textContent = 'Wrong, I have been married since 2009';
+    ansArray.push(prompt2);
   } else {
     console.log('Did not understand your answer for married');
     alert('Did not understand your answer.Make sure to answer yes or no');
@@ -68,11 +72,13 @@ function ask3(){
     console.log('Yes to kids');
     //alert('I do! I have a three year old boy named Henry.');
     a3.textContent = 'I do! I have a three year old boy named Henry.';
+    ansArray.push(prompt3);
     rightAnswers.push(true); //track correct answer//
   } else if ((kids.toLowerCase() === ('no')) || (kids.toLowerCase() === ('n'))) {
     console.log('No to kids');
     //alert('I do have a kid even though you do not think I should.');
     a3.textContent = 'I do have a kid even though you do not think I should.';
+    ansArray.push(prompt3);
   } else {
     console.log('Did not understand your answer for kids');
     alert('Did not understand your answer.Make sure to answer yes or no');
@@ -86,11 +92,13 @@ function ask4(){
     console.log('Yes to pets');
     //alert('Absolutely not, kids are enough!');
     a4.textContent = 'Absolutely not, kids are enough!';
+    ansArray.push(prompt4);
     rightAnswers.push(true); //track correct answer//
   } else if ((pets.toLowerCase() === ('no')) || (pets.toLowerCase() === ('n'))) {
     console.log('No to pets');
     //alert('You are right. I do not have time for pets');
     a4.textContent = 'You are right. I do not have time for pets';
+    ansArray.push(prompt4);
   } else {
     console.log('Did not understand your answer for pets');
     alert('Did not understand your answer.Make sure to answer yes or no');
@@ -103,6 +111,7 @@ function ask5() {
   if ((userAnswer.toLowerCase() === 'yes') || (userAnswer.toLowerCase() === 'y')) {
     console.log('user does like soccer');
     a5.textContent = 'Cool.';
+    ansArray.push(prompt5);
     function ask6(){
       questionsArray.push(prompt6);
       var soccer = prompt(prompt6);
@@ -112,11 +121,13 @@ function ask5() {
     //This is the bonus question if they answer yes
         //alert('Cool, I watch every game!');
         a6.textContent = 'Cool, I watch every game!';
+        ansArray.push(prompt6);
         rightAnswers.push(true); //track correct answer//
       } else if ((soccer.toLowerCase() === 'no') || (soccer.toLowerCase() === 'n')) {
         console.log('no on watching the Sounders');
         //alert('Bummer, you should give them a try');
         a6.textContent = 'Bummer, you should give them a try';
+        ansArray.push(prompt6);
       }
     };
     ask6();
@@ -124,6 +135,7 @@ function ask5() {
     console.log('user answer is no about soccer');
     //alert('that is okay, I still like you.');
     a5.textContent = 'that is okay, I still like you.';
+    ansArray.push(prompt5);
   } else {
     console.log('Did not understand your answer for soccer');
     alert('Did not understand your answer. Make sure to answer yes or no');
@@ -140,9 +152,11 @@ function ask7(){
     if (userGuess > 3) {
       console.log('Guess too high');
       alert('Nope, too high');
+      ansArray.push(prompt7);
     } else if (userGuess < 3) {
       console.log('Guess too low');
       alert('Nope, too low');
+      ansArray.push(prompt7);
     } else if (isNaN(userGuess)) {
       alert('not a number');
       console.log('not a number');
@@ -150,6 +164,7 @@ function ask7(){
       console.log('Guess is correct');
       //alert('You are correct!');
       a7.textContent = 'You are correct!';
+      ansArray.push(prompt7);
       rightAnswers.push(true); //track correct answers//
     }
   };
